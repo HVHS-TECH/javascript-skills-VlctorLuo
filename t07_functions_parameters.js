@@ -1,1 +1,52 @@
-/* Paste your code from task 6 here */
+/****************************
+Name of task: Function Parameters
+****************************/
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+console.log("Running task 07_functions_parameters");
+// Variables
+let username = "Victor"
+let age = 15
+let money = 9999999999
+let year = 2026
+var answer
+/*****************
+Main Code
+*****************/
+console.log("Hi "+ username);
+console.log("As of " + year + " you are " + age + " years old");
+console.log("You were born in", + year - age);
+console.log("In 10 years you will be", age + 10 ,"years old");
+console.log("You have " + money + " dollars");
+answer = money/2
+console.log("If you spend half of your money, now you have", + money / 2, "dollars");
+console.log("Then you get $3, now you have", + answer+3);
+
+OUTPUT.innerHTML = "<h1>Running task 07_Javascript_and_HTML</h1>";
+OUTPUT.innerHTML += "<h2>Hi " + username + "</h2>";
+OUTPUT.innerHTML += "<p>As of "+ year +  " you are " + age + " years old</p>"
+OUTPUT.innerHTML += "<p>You were born in "+ (year - age), "</p>"
+OUTPUT.innerHTML += "<p>In 10 years you will be " + (age + 10) +" years old</p>"
+OUTPUT.innerHTML += "<p>You have "+ money + " dollars</p>"
+OUTPUT.innerHTML += "<p>If you spend half of your money, now you have " + (money / 2) + " dollars</p>"
+OUTPUT.innerHTML += "<p>Then you get $3, now you have " + (answer + 3) + " dollars</p>"
+writeline()
+
+welcome ()
+displayProduct("Skibidi toilet: $", 67)
+displayProduct("Brr brr patapim: $", 68)
+displayProduct("Tung tung tung sahur: $", 69)
+
+/*****************
+Functions
+*****************/
+function writeline (){
+    OUTPUT.innerHTML += "<h3>I have 1 million trillion robux</h3>"
+}
+
+function welcome (){
+    OUTPUT.innerHTML += "<h1>Welcome to my shop</h1>"
+}
+
+function displayProduct (_name, _price){
+    OUTPUT.innerHTML += "<p>"+_name+_price+"</p>"
+}   

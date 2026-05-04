@@ -1,5 +1,5 @@
 /****************************
-Name of task: Introduction
+Name of task: JS AND HTML
 ****************************/
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput")
 console.log("Running task 05_JavaScript_and_HTML")
@@ -15,13 +15,25 @@ Main Code
 console.log("Hi "+ username);
 console.log("As of " + year + " you are " + age + " years old");
 console.log("You were born in", + year - age);
-console.log("In 10 years will will be", age + 10 ,"years old");
+console.log("In 10 years you will be", age + 10 ,"years old");
 console.log("You have " + money + " dollars");
 answer = money/2
 console.log("If you spend half of your money, now you have", + money / 2, "dollars");
 console.log("Then you get $3, now you have", + answer+3);
 
-OUTPUT.innerHTML = "<h1>Hi " + username + "</h1>";
+OUTPUT.innerHTML = "<h1>Running task 05_Javascript_and_HTML</h1>";
+OUTPUT.innerHTML += "<h2>Hi " + username + "</h2>";
+OUTPUT.innerHTML += "<p>As of "+ year +  " you are " + age + " years old</p>"
+OUTPUT.innerHTML += "<p>You were born in "+ (year - age), "</p>"
+OUTPUT.innerHTML += "<p>In 10 years you will be " + (age + 10) +" years old</p>"
+OUTPUT.innerHTML += "<p>You have "+ money + " dollars</p>"
+OUTPUT.innerHTML += "<p>If you spend half of your money, now you have " + (money / 2) + " dollars</p>"
+OUTPUT.innerHTML += "<p>Then you get $3, now you have " + (answer + 3) + " dollars</p>"
+
+
+
+
+
 /*****************
 Functions
 *****************/
